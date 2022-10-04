@@ -1,0 +1,668 @@
+/* 
+font-family: 'Saira', sans-serif;
+font-family: 'Saira Condensed', sans-serif; 
+*/
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+.clearfix {
+    content: "";
+    display: block;
+    clear: both;
+}
+
+/* Header */
+
+header {
+    position: relative;
+    background-color: #827397;
+    height: 100vh;
+    max-width: 1920px;
+    margin: 0 auto;
+}
+
+header img {
+    position: absolute;
+    height: 50%;
+    bottom: 0;
+    right: 30%;
+}
+
+.welcome {
+    z-index: 1;
+    position: absolute;
+    top: 10%;
+    left: 5%;
+    right: 5%;
+    text-align: center;
+    font-family: 'Saira Condensed', sans-serif;
+    font-weight: bold;
+    font-size: 40px;
+    color: white;
+    text-transform: uppercase;
+
+}
+
+header h1 {
+    font-size: 20px;
+
+}
+
+header h2 {
+    font-size: 20px;
+    font-weight: normal;
+    margin-top: 10px;
+}
+
+header button {
+    font-family: 'Saira', sans-serif;
+    font-weight: 300;
+    line-height: 32px;
+    padding: 0 20px;
+    text-transform: uppercase;
+    color: white;
+    background-color: transparent;
+    font-size: 12px;
+    border: 2px solid white;
+
+}
+
+@media (orientation: portrait) and (min-width: 360px) {
+    header h1 {
+        font-size: 24px;
+    }
+
+    header h2 {
+        font-size: 22px;
+    }
+
+    header button {
+        line-height: 40px;
+        font-size: 16px;
+    }
+}
+
+@media (orientation: portrait) and (min-width: 410px) {
+    header h1 {
+        font-size: 26px;
+    }
+
+    header h2 {
+        font-size: 26px;
+        margin-bottom: 10px;
+    }
+
+    header button {
+        line-height: 50px;
+        font-size: 20px;
+    }
+
+    header img {
+        bottom: 5%;
+    }
+}
+
+@media (orientation: portrait) and (min-width: 768px) {
+    header p {
+        font-size: 50px;
+    }
+
+    header h1 {
+        font-size: 30px;
+    }
+
+    header h2 {
+        font-size: 30px;
+        margin-bottom: 20px;
+    }
+
+    header button {
+        line-height: 60px;
+        font-size: 25px;
+    }
+
+    header img {
+        bottom: 2%;
+        height: 60%;
+    }
+}
+
+
+@media (orientation: landscape) {
+    header img {
+        height: 80%;
+        bottom: 5%;
+        right: 15%;
+    }
+
+    .welcome {
+        top: 15%;
+        left: 5%;
+        right: 50%;
+    }
+
+}
+
+@media (orientation: landscape) and (min-width: 640px) {
+    header h1 {
+        font-size: 24px;
+    }
+
+    header h2 {
+        font-size: 22px;
+        margin-bottom: 10px;
+    }
+
+    header button {
+        font-size: 16px;
+        line-height: 40px;
+
+    }
+}
+
+@media (orientation: landscape) and (min-width: 1024px) {
+
+    header p {
+        font-size: 60px;
+    }
+
+    header h1 {
+        font-size: 40px;
+    }
+
+    header h2 {
+        font-size: 35px;
+        margin-bottom: 20px;
+    }
+
+    header button {
+        font-size: 25px;
+        line-height: 60px;
+
+    }
+
+    header img {
+        height: 85%;
+    }
+}
+
+@media (orientation: landscape) and (min-width: 1280px) {
+
+    header p {
+        font-size: 80px;
+    }
+
+    header h1 {
+        font-size: 60px;
+    }
+
+    header h2 {
+        font-size: 55px;
+        margin-bottom: 30px;
+    }
+
+    header button {
+        font-size: 40px;
+        line-height: 100px;
+        padding: 0 40px;
+        border-width: 4px;
+
+    }
+
+}
+
+@media (orientation: landscape) and (min-width: 1600px) {
+
+    header p {
+        font-size: 100px;
+    }
+
+    header h1 {
+        font-size: 80px;
+    }
+
+    header h2 {
+        font-size: 70px;
+        margin-bottom: 40px;
+    }
+
+    header button {
+        font-size: 50px;
+        line-height: 120px;
+
+    }
+
+    header img {
+        right: 10%;
+    }
+}
+
+@media(min-width: 1024px) {
+    header button:hover {
+        cursor: pointer;
+        background-color: white;
+        color: #827397;
+        transition: 0.3s;
+    }
+}
+
+/* Section Features */
+section {
+    min-height: 30vh;
+}
+
+.features {
+    max-width: 1600px;
+    margin: 3% auto 0;
+    padding: 5%;
+    text-align: center;
+}
+
+.features h1 {
+    font-family: 'Saira Condensed', sans-serif;
+    font-size: 24px;
+    text-transform: uppercase;
+    color: #4D4C7D;
+
+}
+
+.features h2 {
+    font-family: 'Saira Condensed', sans-serif;
+    text-transform: uppercase;
+    font-size: 18px;
+    color: #827397;
+}
+
+.features p {
+    font-family: 'Saira', sans-serif;
+    font-size: 12px;
+    font-weight: 300;
+}
+
+.features img {
+    width: 100%;
+    margin: 5% 0;
+    max-width: 375px;
+}
+
+@media(min-width: 360px) {
+    .features h1 {
+        font-size: 26px;
+    }
+
+    .features h2 {
+        font-size: 20px;
+    }
+
+    .features p {
+        font-size: 14px;
+    }
+}
+
+@media(min-width: 768px) {
+    .features h1 {
+        font-size: 40px;
+    }
+
+    .features h2 {
+        font-size: 30px;
+    }
+
+    .features p {
+        font-size: 25px;
+    }
+
+    .features img {
+        max-width: 600px;
+    }
+}
+
+@media(min-width: 1024px) {
+    .feature {
+        float: left;
+        width: 33%;
+        padding: 1%;
+    }
+
+    .features h1 {
+        font-size: 40px;
+    }
+
+    .features h2 {
+        font-size: 20px;
+    }
+
+    .features p {
+        font-size: 16px;
+    }
+
+}
+
+@media(min-width: 1600px) {
+    .features h1 {
+        font-size: 50px;
+    }
+
+    .features h2 {
+        font-size: 30px;
+    }
+
+    .features p {
+        font-size: 22px;
+    }
+
+}
+
+/* Quote */
+
+.quote {
+    max-width: 1920px;
+    margin: 0 auto;
+    text-align: center;
+    background-image: url(../images/question-mark.jpg);
+    background-size: cover;
+    color: white;
+    font-family: 'Saira', sans-serif;
+    padding: 4%;
+    margin-top: 30px;
+}
+
+.quote h1 {
+    font-size: 24px;
+    margin-bottom: 4%;
+}
+
+.quote h2 {
+    font-size: 18px;
+}
+
+@media(orientation: landscape) {
+
+    .quote h1,
+    .quote h1 {
+        width: 70%;
+        margin-left: auto;
+        margin-right: auto;
+    }
+}
+
+@media(min-width: 768px) {
+
+    .quote h1 {
+        font-size: 40px;
+    }
+
+    .quote h2 {
+        font-size: 22px;
+    }
+}
+
+@media(min-width: 1024px) {
+    .quote h1 {
+        font-size: 36px;
+    }
+
+    .quote h2 {
+        font-size: 26px;
+    }
+}
+
+@media(min-width: 1600px) {
+    .quote h1 {
+        font-size: 50px;
+    }
+
+    .quote h2 {
+        font-size: 40px;
+    }
+}
+
+/* Hobby */
+
+.hobby {
+    max-width: 1920px;
+    margin: 0 auto;
+}
+
+.hobby h1 {
+    font-family: 'Saira Condensed', sans-serif;
+    font-size: 24px;
+    text-transform: uppercase;
+    color: #4D4C7D;
+    text-align: center;
+    padding: 5%;
+}
+
+.hobby .item {
+    background-position: center;
+    background-size: cover;
+    height: 30vh;
+    background-repeat: no-repeat;
+
+}
+
+
+.hobby .item p {
+    color: white;
+    font-family: 'Saira', sans-serif;
+    text-align: center;
+    font-size: 30px;
+    line-height: 30vh;
+    background-color: rgba(0, 0, 0, 0.4);
+
+
+
+}
+
+.spanie {
+    background-image: url(../images/sleeping.jpg);
+}
+
+.jedzenie {
+    background-image: url(../images/eating.jpg);
+}
+
+.spacery {
+    background-image: url(../images/walking.jpg);
+}
+
+.zabawa {
+    background-image: url(../images/playing.jpg);
+}
+
+@media(min-width: 533px) {
+    .hobby .item {
+        float: left;
+        width: 50%;
+        height: 40vh;
+    }
+
+    .hobby .item p {
+        line-height: 40vh;
+    }
+
+}
+
+@media(min-width: 768px) {
+    .hobby h1 {
+        font-size: 40px;
+    }
+
+    .hobby .item p {
+        font-size: 34px;
+    }
+}
+
+@media(min-width: 1024px) {
+    .hobby .item p {
+        font-size: 40px;
+        opacity: 0;
+        transition: 0.6s;
+
+    }
+
+    .hobby .item:hover p {
+        opacity: 1;
+
+    }
+
+    .hobby .item {
+        background-size: 100%;
+        transition: 1s;
+    }
+
+    .hobby .item:hover {
+        background-size: 130%;
+    }
+
+    .hobby h1 {
+        font-size: 50px;
+    }
+}
+
+.contact {
+    background-color: #4D4C7D;
+    padding: 3% 5%;
+    max-width: 1920px;
+    margin: 0 auto;
+}
+
+.contact .contactform {
+    max-width: 1024px;
+    margin: 0 auto;
+}
+
+.contact h1 {
+    font-family: 'Saira Condensed', sans-serif;
+    font-size: 24px;
+    text-transform: uppercase;
+    color: white;
+    text-align: center;
+    margin: 20px;
+
+}
+
+.contact input,
+.contact textarea,
+.contact button {
+    width: 100%;
+    font-family: 'Saira', sans-serif;
+    margin-bottom: 3%;
+    font-size: 12px;
+    padding: 1%;
+}
+
+.contact input {
+    height: 30px;
+}
+
+.contact textarea {
+    height: 150px;
+}
+
+.contact button {
+    line-height: 30px;
+    background-color: #4D4C7D;
+    color: white;
+    border: 2px solid white;
+}
+
+.socialicon {
+    height: 50px;
+    width: 50px;
+}
+
+
+.contact .social {
+    color: white;
+    font-family: 'Saira', sans-serif;
+    margin-bottom: 20px;
+}
+
+.contact .social img {
+    float: left;
+}
+
+.contact .social span {
+    line-height: 50px;
+    padding-left: 3%;
+}
+
+@media (min-width: 768px) {
+    .contact h1 {
+        font-size: 40px;
+    }
+
+    .contact input,
+    .contact textarea {
+        font-size: 16px;
+    }
+
+    .contact button {
+        line-height: 30px;
+        font-size: 18px;
+    }
+
+    .contact .social span {
+        font-size: 18px;
+    }
+}
+
+@media (min-width: 1024px) {
+    .contact h1 {
+        font-size: 50px;
+        margin-bottom: 30px;
+    }
+
+    .contact input,
+    .contact textarea {
+        font-size: 20px;
+    }
+
+    .contact button {
+        line-height: 40px;
+        font-size: 22px;
+        transition: 0.5s;
+    }
+
+    .contact button:hover {
+        background-color: white;
+        color: #4D4C7D;
+
+    }
+
+    .contact .social span {
+        font-size: 22px;
+    }
+}
+
+@media (min-width: 1600px) {
+
+    .contact input,
+    .contact textarea {
+        font-size: 22px;
+    }
+
+    .contact button {
+        line-height: 50px;
+        font-size: 24px;
+    }
+
+    .contact .social span {
+        font-size: 24px;
+    }
+}
+
+footer {
+    font-family: 'Saira', sans-serif;
+    color: #4D4C7D;
+    text-align: center;
+    font-weight: 500;
+    padding: 3%;
+    font-size: 20px;
+
+}
